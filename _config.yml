@@ -1,0 +1,33 @@
+theme: jekyll-theme-slate
+google_analytics: G-B3JKC02NHT
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+kramdown:
+  syntax_highlighter_opts:
+    default_lang: csharp
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+title: kube-guide
+tagline: Kubernetes - Journey to Production - Lessons Learnt
+description: Kubernetes - Journey to Production - Lessons Learnt
+url: https://qbituniverse.github.io/kube-guide
+author: Marcin Narloch
+twitter:
+  username: marcinnarloch
+logo: /assets/images/kube-guide.png
+lang: en-GB
+social:
+  name: Marcin Narloch
+  links:
+    - https://qbituniverse.com
+    - https://github.com/qbituniverse
+    - https://hub.docker.com/u/qbituniverse
+    - https://uk.linkedin.com/in/marcinnarloch
+    - https://twitter.com/marcinnarloch
+    - https://www.youtube.com/channel/UC_FMMKbtmMbT4hCkX6SJWgA
+    - https://www.youtube.com/channel/UCCAUP6HwluG3Hi93fymVHUQ
