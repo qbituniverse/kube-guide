@@ -1,0 +1,169 @@
+body {
+    background: #fff;
+    color: #222;
+}
+
+a, #footer_copyright_wrap a {
+    color: #373737;
+    border-bottom: 1px dashed #373737;
+}
+
+a:hover, #footer_copyright_wrap a:hover {
+    text-decoration: none;
+    color: #848484;
+    border-bottom: 1px dashed #848484;
+}
+
+h1 {
+    color: #373737;
+    font-size: 34px;
+}
+
+h2 {
+    color: #848484;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+code {
+    border: 1px solid #848484;
+}
+
+code table, code td {
+    border: none;
+}
+
+pre.highlight {
+    background-color: #fff;
+}
+
+pre.highlight code {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+pre.highlight td > pre {
+    box-shadow: none;
+}
+
+pre.highlight table {
+    margin: 0;
+}
+
+.inner {
+    max-width: 875px;
+}
+
+#header_wrap {
+    background: #2e7bcf url(/assets/images/bg.jpg) 0 0 repeat;
+}
+
+#header_wrap header.inner {
+    padding: 10px 10px 10px 10px;
+}
+
+#header_wrap a, #footer_menu_wrap a { 
+    color: #fff; 
+    border: none;
+}
+
+#main_content {
+    padding-top: 20px;
+}
+
+#main_content_wrap {
+    background: #fff;
+    border-top: 1px solid #373737;
+    border-bottom: 1px solid #373737;
+}
+
+#project_title { 
+    text-align: center;
+    font-size: 60px;
+}
+
+#footer_menu_wrap {
+    background: #2e7bcf url(/assets/images/bg.jpg) 0 0 repeat;
+}
+
+#footer_menu_wrap h1
+{
+    color: #fff;
+    text-align: center;
+}
+#footer_menu_wrap ul
+{
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+#footer_menu_wrap ul li
+{
+    padding-bottom: 7px;
+}
+
+#footer_menu_wrap ul li h2
+{
+    background: none;
+    margin: 0 0 -5px 0;
+    padding: 0;
+}
+
+#footer_menu_wrap ul li span
+{
+    color: #bbb;
+}
+
+#footer_menu_wrap a:hover {
+    text-decoration: none;
+    color: #bbb;
+    border-bottom: 1px dashed #bbb;
+}
+
+#footer_copyright_wrap { 
+    color: #000;
+    text-align: center;
+    background: #fff;
+    width: 100%;
+}
+
+#footer_copyright_wrap p { 
+    color: #222;
+    text-align: center;
+    width: 100%;
+}
+
+footer a { text-decoration: none; }
+
+#next, #previous--next, #previous { text-align: center; }
+
+.project_image {
+    background: url('/assets/images/kube-guide.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:60px;
+    height:60px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) { 
+    h1 { font-size: 20px; }
+    h2 { font-size: 15px; }
+    h3 { font-size: 15px; }
+    h4 { font-size: 13px; }
+    #project_title { font-size: 50px; } 
+}
+@media screen and (max-width: 320px) {
+    h1 { font-size: 17px; }
+    h2 { font-size: 13px; }
+    h3 { font-size: 13px; }
+    h4 { font-size: 12px; }
+    #project_title { font-size: 40px; }
+    code, pre { min-width: unset; max-width: unset; }
+}
