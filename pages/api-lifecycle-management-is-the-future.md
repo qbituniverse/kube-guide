@@ -1,7 +1,7 @@
 ---
 title: IX. API Lifecycle Management is the future
 description: APIs are and always will be at the heart of any solution
-permalink: /api-lifecycle-management-is-the-future/
+permalink: ./api-lifecycle-management-is-the-future/
 ---
 
 # IX. API Lifecycle Management is the future
@@ -12,9 +12,9 @@ World runs on [APIs](https://en.wikipedia.org/wiki/API) - Apps on smart phones, 
 
 > `APIs are the veins` - `API Management is the heart` - `API Lifecycle is a process`
 
-What we are concerned with in the context of [MASA Mesh Apps and Services](/adopt-mesh-app-and-service-architecture) is the notion of `Web APIs` or `Microservices`. Web APIs are delivered over [Hypertext Transfer Protocol (HTTP)](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) protocol and normally implement either [Extensible Markup Language (XML)](https://en.wikipedia.org/wiki/XML) or [JavaScript Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON) messaging format.
+What we are concerned with in the context of [MASA Mesh Apps and Services](./adopt-mesh-app-and-service-architecture) is the notion of `Web APIs` or `Microservices`. Web APIs are delivered over [Hypertext Transfer Protocol (HTTP)](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) protocol and normally implement either [Extensible Markup Language (XML)](https://en.wikipedia.org/wiki/XML) or [JavaScript Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON) messaging format.
 
-`HTTP, XML/JSON` are set standards that software development community adopted with `Web APIs` implementations. This promotes consistency, agility, and re-usability. Advent of [Docker Containers and Kubernetes](/docker-kubernetes-and-helm) has accelerated adoption of Microservices and Mesh Architectures ([MASA](/adopt-mesh-app-and-service-architecture)) and that in turn made [API Management (APIM)](https://en.wikipedia.org/wiki/API_management) product a central component in any modern MASA solution.
+`HTTP, XML/JSON` are set standards that software development community adopted with `Web APIs` implementations. This promotes consistency, agility, and re-usability. Advent of [Docker Containers and Kubernetes](./docker-kubernetes-and-helm) has accelerated adoption of Microservices and Mesh Architectures ([MASA](./adopt-mesh-app-and-service-architecture)) and that in turn made [API Management (APIM)](https://en.wikipedia.org/wiki/API_management) product a central component in any modern MASA solution.
 
 `API Management (APIM)` is a facade, a central location to discover and consume APIs within your organisation or amongst your consumers. It plays a `fundamental` role in an API driven architecture not just from routing HTTP calls to underlying services, but also `enhances the API experience` with features such as `Policies` and `Gateways`.
 
@@ -30,7 +30,7 @@ Well, this is role of `ALF` or `API Lifecycle Framework` which consists of three
 
 ### Building APIs
 
-At this point it's all about the [product team](/embrace-product-oriented-delivery-model) working on the API. The team will design it and deliver an end-to-end API package containing the `API spec`, `API documentation` and the actual `deployed API`.
+At this point it's all about the [product team](./embrace-product-oriented-delivery-model) working on the API. The team will design it and deliver an end-to-end API package containing the `API spec`, `API documentation` and the actual `deployed API`.
 
 #### Design
 
@@ -40,7 +40,7 @@ This is probably the most important phase in any API lifecycle. You'll be design
 
 #### Develop
 
-Now we have the `API Spec` defined and agreed upon amongst the API stakeholders. The spec then makes its way to source control, such as [GitHub](https://github.com/), and development on the API commences. Code build and quality check in your [CICD Pipelines](/start-early-with-cicd-and-automation) should test if the code implementation `adheres the API Spec`. If not, API should not be allowed to move beyond DEV stage.
+Now we have the `API Spec` defined and agreed upon amongst the API stakeholders. The spec then makes its way to source control, such as [GitHub](https://github.com/), and development on the API commences. Code build and quality check in your [CICD Pipelines](./start-early-with-cicd-and-automation) should test if the code implementation `adheres the API Spec`. If not, API should not be allowed to move beyond DEV stage.
 
 > Development will follow the `API Spec` so that code is written to `programmatically implement` the requirement.
 
@@ -52,7 +52,7 @@ Another benefit of adopting `API Spec` is the fact that these specification file
 
 #### Catalogue
 
-Whichever API specification standard you decide to follow, it'll enable you to feed these spec files into API collaboration tools such as [Postman](https://www.postman.com/). The process of feeding `API Specs` can be automated with standard [CICD Pipelines](/start-early-with-cicd-and-automation) every time API definition changes or perhaps when API feature is developed. For example you [can convert API Specs to Postman collections](https://blog.postman.com/converting-openapi-specs-to-postman-collections/) with use of converters.
+Whichever API specification standard you decide to follow, it'll enable you to feed these spec files into API collaboration tools such as [Postman](https://www.postman.com/). The process of feeding `API Specs` can be automated with standard [CICD Pipelines](./start-early-with-cicd-and-automation) every time API definition changes or perhaps when API feature is developed. For example you [can convert API Specs to Postman collections](https://blog.postman.com/converting-openapi-specs-to-postman-collections/) with use of converters.
 
 This will ensure that what is in the `API catalogue` is always an up-to-date representation of the API either available to consume as a `real implementation` or `mock`.
 
@@ -93,13 +93,13 @@ At this point your APIs are, hopefully, running and serving `Production` applica
 
 #### Monitoring
 
-Here we are simply looking at the API from `performance` and `troubleshooting` point of view. This requires your product development team to [invest time and efforts into efficient logging and monitoring](/invest-efforts-into-logging-and-monitoring) standards and tools. Once you API `log` and `trace` data is sent to your central monitoring system you'll then be able to analyse it, set reports or alerts up as well as `proactively` detect anomalies with your APIs.
+Here we are simply looking at the API from `performance` and `troubleshooting` point of view. This requires your product development team to [invest time and efforts into efficient logging and monitoring](./invest-efforts-into-logging-and-monitoring) standards and tools. Once you API `log` and `trace` data is sent to your central monitoring system you'll then be able to analyse it, set reports or alerts up as well as `proactively` detect anomalies with your APIs.
 
 #### Dependencies
 
-The nature of [distributed systems](/adopt-mesh-app-and-service-architecture) built from a mesh of small components interconnected with each other is that you introduce `numerous dependencies` between these components. When it comes to releasing new versions of your APIs or decommissioning old ones it's important that none of these dependencies is broken. There are possibly two ways of addressing the API Observability:
+The nature of [distributed systems](./adopt-mesh-app-and-service-architecture) built from a mesh of small components interconnected with each other is that you introduce `numerous dependencies` between these components. When it comes to releasing new versions of your APIs or decommissioning old ones it's important that none of these dependencies is broken. There are possibly two ways of addressing the API Observability:
 
 > 1. Leverage your `monitoring solution` which might offer API-to-API mapping out of the box based on API metrics and logs
 > 2. Describe API-to-API mapping in `source code` where dependencies are defined in code: [Pivio](http://pivio.io/) or [Stackify](https://stackify.com/application-dependency-mapping-performance/)
 
-### [<< Previous](/design-container-ready-development) | [Next >>](/consider-platformops-for-delivering-software)
+### [<< Previous](./design-container-ready-development) | [Next >>](./consider-platformops-for-delivering-software)

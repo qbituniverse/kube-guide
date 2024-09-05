@@ -1,7 +1,7 @@
 ---
 title: III. Embed Least Privileged approach
 description: Only provide enough privileges that are necessary
-permalink: /embed-least-privileged-approach/
+permalink: ./embed-least-privileged-approach/
 ---
 
 # III. Embed Least Privileged approach
@@ -14,7 +14,7 @@ What's worst these applications often had to operate in an `elevated administrat
 
 ## How containers solve the elevated privileges problem?
 
-You design your application [with containers in mind](/start-thinking-containers) by virtue of adopting Dockerfile declaration for your application. [From the previous chapter](/start-thinking-containers) we know that containerised applications build on top of `Base Images`, such as Core OS ([Windows Server Core](https://hub.docker.com/_/microsoft-windows-servercore) or [Alpine Linux](https://hub.docker.com/_/alpine)) or a Framework ([.NET Core](https://hub.docker.com/_/microsoft-dotnet-core) or [Node](https://hub.docker.com/_/node)) - which in turn are built on core OS...
+You design your application [with containers in mind](./start-thinking-containers) by virtue of adopting Dockerfile declaration for your application. [From the previous chapter](./start-thinking-containers) we know that containerised applications build on top of `Base Images`, such as Core OS ([Windows Server Core](https://hub.docker.com/_/microsoft-windows-servercore) or [Alpine Linux](https://hub.docker.com/_/alpine)) or a Framework ([.NET Core](https://hub.docker.com/_/microsoft-dotnet-core) or [Node](https://hub.docker.com/_/node)) - which in turn are built on core OS...
 
 The `Least Privileged` restrictions can be applied in two ways: 
 > 1. Inside `Dockerfile` composition stage for Image Builds
@@ -44,4 +44,4 @@ Only assign [CPU](https://en.wikipedia.org/wiki/Central_processing_unit) and [RA
 
 If your container workload is stateless by nature and `doesn't need to modify its file system`, then simply turn off the ability to write to it.
 
-### [<< Previous](/start-thinking-containers) | [Next >>](/adopt-mesh-app-and-service-architecture)
+### [<< Previous](./start-thinking-containers) | [Next >>](./adopt-mesh-app-and-service-architecture)

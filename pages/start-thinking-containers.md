@@ -1,14 +1,14 @@
 ---
 title: II. Start thinking Containers
 description: If it cannot be containerised then change approach to make it possible
-permalink: /start-thinking-containers/
+permalink: ./start-thinking-containers/
 ---
 
 # II. Start thinking Containers
 
 ## If it cannot be containerised then change approach to make it possible
 
-So you made your mind up, you like the benefits containers bring, such as [workload isolation and packaging](/docker-kubernetes-and-helm) and [focus on security](/embed-least-privileged-approach). You also like the aspect of being able to architect your solutions from [multiple smaller services](/adopt-mesh-app-and-service-architecture) and perform [rapid releases](/start-early-with-cicd-and-automation) to `Kubernetes`.
+So you made your mind up, you like the benefits containers bring, such as [workload isolation and packaging](./docker-kubernetes-and-helm) and [focus on security](./embed-least-privileged-approach). You also like the aspect of being able to architect your solutions from [multiple smaller services](./adopt-mesh-app-and-service-architecture) and perform [rapid releases](./start-early-with-cicd-and-automation) to `Kubernetes`.
 
 ## Where to start with containerisation?
 
@@ -44,4 +44,4 @@ For example, if you have .NET Core API which has dependency on a `proprietary DL
 
 Alternatively, you might need to run `proprietary executable` while you build Image for your application or run an installation of a framework - in either case you simply add [RUN](https://docs.docker.com/engine/reference/builder/#run) statement and point it to the executable.
 
-### [<< Previous](/docker-kubernetes-and-helm) | [Next >>](/embed-least-privileged-approach)
+### [<< Previous](./docker-kubernetes-and-helm) | [Next >>](./embed-least-privileged-approach)

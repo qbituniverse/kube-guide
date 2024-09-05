@@ -1,7 +1,7 @@
 ---
 title: XI. Embrace Product-Oriented Delivery model
 description: Create cross-functional teams to allow Business and IT work together
-permalink: /embrace-product-oriented-delivery-model/
+permalink: ./embrace-product-oriented-delivery-model/
 ---
 
 # XI. Embrace Product-Oriented Delivery model
@@ -41,4 +41,4 @@ As opposed to `projects` which tend to be delivered in a [waterfall model](https
 > 5. `Daily Stand-up`: Ability to react to adverse events quickly with little impact to long-term expectations
 > 6. `Sprint Review`: Transparency and open communication at the stakeholder level
 
-### [<< Previous](/consider-platformops-for-delivering-software) | [Next >>](/the-journey-to-kubernetes-in-production)
+### [<< Previous](./consider-platformops-for-delivering-software) | [Next >>](./the-journey-to-kubernetes-in-production)

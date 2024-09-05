@@ -1,7 +1,7 @@
 ---
 title: kube-guide
 description: Kubernetes - Journey to Production - Lessons Learnt
-permalink: /
+permalink: ./
 ---
 
 # Introduction
