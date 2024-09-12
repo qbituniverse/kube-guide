@@ -60,7 +60,7 @@ pre.highlight table {
 }
 
 #header_wrap {
-    background: #2e7bcf url(./assets/images/bg.jpg) 0 0 repeat;
+    background: #2e7bcf url(/assets/images/bg.jpg) 0 0 repeat;
 }
 
 #header_wrap header.inner {
@@ -88,7 +88,7 @@ pre.highlight table {
 }
 
 #footer_menu_wrap {
-    background: #2e7bcf url(./assets/images/bg.jpg) 0 0 repeat;
+    background: #2e7bcf url(/assets/images/bg.jpg) 0 0 repeat;
 }
 
 #footer_menu_wrap h1
@@ -144,7 +144,7 @@ footer a { text-decoration: none; }
 #next, #previous--next, #previous { text-align: center; }
 
 .project_image {
-    background: url('./assets/images/kube-guide.png');
+    background: url('/assets/images/kube-guide.png');
     background-repeat: no-repeat;
     background-size: cover;
     width:60px;
