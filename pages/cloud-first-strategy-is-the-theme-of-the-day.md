@@ -14,7 +14,7 @@ Everyone, and everything, is moving into the cloud, which for some organisations
 
 `Digital transformation` initiatives tend to provide a catalyst towards cloud adoption which is often seen when organisations embark on a `Product` delivery model. And, what's the best way to deliver your product than on the cloud?
 
-> [Product-oriented delivery model](./embrace-product-oriented-delivery-model) stems from the desire to deliver fast, frequently and only what your clients need - concept referred to as [Minimum viable product (MVP)](https://en.wikipedia.org/wiki/Minimum_viable_product).
+> [Product-oriented delivery model](/embrace-product-oriented-delivery-model) stems from the desire to deliver fast, frequently and only what your clients need - concept referred to as [Minimum viable product (MVP)](https://en.wikipedia.org/wiki/Minimum_viable_product).
 
 ## Approach cloud via Product delivery
 
@@ -30,7 +30,7 @@ The journey needs to be a joint venture of Business and Technology teams working
 > 4. Design infrastructure and software `architecture` - this is where the cloud and its features will be considered
 > 5. Choose `tech stack` to deliver it all - this is where you make choices as to which resources in the cloud to adopt
 
-The [Product-oriented delivery model](./embrace-product-oriented-delivery-model) presents you with a great opportunity to `start small`, `start quick`, `react fast` and `iterate` on your progress until you get your MVP in the right shape. And you just keep the business teams frequently updated on the progress - that's neat! 
+The [Product-oriented delivery model](/embrace-product-oriented-delivery-model) presents you with a great opportunity to `start small`, `start quick`, `react fast` and `iterate` on your progress until you get your MVP in the right shape. And you just keep the business teams frequently updated on the progress - that's neat! 
 
 ## Approach cloud from within the Technology
 
@@ -48,6 +48,6 @@ If cloud adoption is to be driven from technology side, then probably best way i
 
 ## Final thoughts as either way you do this it'll be a game changer...
 
-> In either approach to `cloud adoption`, an organisational tech restructure is probably unavoidable. Make sure you upskill or re-deploy people to do jobs that are relevant in the new ways of delivering technology to the business. The shift towards [virtualisation and containers](./docker-kubernetes-and-helm) will also create brand new avenues for `tech savvy individuals` in the space of platform management - also known as [PlatformOps](./consider-platformops-for-delivering-software).
+> In either approach to `cloud adoption`, an organisational tech restructure is probably unavoidable. Make sure you upskill or re-deploy people to do jobs that are relevant in the new ways of delivering technology to the business. The shift towards [virtualisation and containers](/docker-kubernetes-and-helm) will also create brand new avenues for `tech savvy individuals` in the space of platform management - also known as [PlatformOps](/consider-platformops-for-delivering-software).
 
-### [<< Previous](./invest-efforts-into-logging-and-monitoring) | [Next >>](./design-container-ready-development)
+### [<< Previous](/invest-efforts-into-logging-and-monitoring) | [Next >>](/design-container-ready-development)

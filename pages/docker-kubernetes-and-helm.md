@@ -16,7 +16,7 @@ Docker has taken both software and infrastructure virtualisation to the next lev
 
 > The container format standard is now governed by the [Open Container Initiative (OCI)](https://opencontainers.org/).
 
-`Docker` allows you to define your software runtime, dependencies and binaries that need to execute for your software to function properly. This is done using the Dockerfile as a mechanism to build an [Image](https://docs.docker.com/engine/reference/commandline/image/) - a snapshot of your application at a time of the build. Docker also introduces another very important concept called [Least Privileged](./embed-least-privileged-approach). In essence making your software `secure` and self-contained, or `isolated`, from any external influences.
+`Docker` allows you to define your software runtime, dependencies and binaries that need to execute for your software to function properly. This is done using the Dockerfile as a mechanism to build an [Image](https://docs.docker.com/engine/reference/commandline/image/) - a snapshot of your application at a time of the build. Docker also introduces another very important concept called [Least Privileged](/embed-least-privileged-approach). In essence making your software `secure` and self-contained, or `isolated`, from any external influences.
 
 Once you have your `Image` built, all you have to do with it is to run it on what is called [Container Runtime](https://www.docker.com/products/container-runtime) at which point your software becomes a running [Container](https://www.docker.com/resources/what-container).
 
@@ -24,15 +24,15 @@ Finally, you can store your Images in `Container Registries`, such as [Azure ACR
 
 ## What is Kubernetes?
 
-Software solutions are rarely as simple as single container deployments. Often you will architect your solutions from multiple smaller components, referred as [Microservices](https://en.wikipedia.org/wiki/Microservices) or [APIs](https://en.wikipedia.org/wiki/API). Concepts such as [Mesh App and Service Architecture (MASA)](./adopt-mesh-app-and-service-architecture) are often considered in such scenarios. Therefore, to pull these multi-app, multi-service deployments off you need something more than just Docker, you need `container orchestrator`, and luckily there's one called Kubernetes (k8s)...
+Software solutions are rarely as simple as single container deployments. Often you will architect your solutions from multiple smaller components, referred as [Microservices](https://en.wikipedia.org/wiki/Microservices) or [APIs](https://en.wikipedia.org/wiki/API). Concepts such as [Mesh App and Service Architecture (MASA)](/adopt-mesh-app-and-service-architecture) are often considered in such scenarios. Therefore, to pull these multi-app, multi-service deployments off you need something more than just Docker, you need `container orchestrator`, and luckily there's one called Kubernetes (k8s)...
 
-`Kubernetes` allows you to automate, scale and manage your containerised applications. It's a `production grade` system which you can run [in development](./design-container-ready-development), on-premises or in the cloud with [Azure AKS](https://azure.microsoft.com/en-gb/services/kubernetes-service), [Google GKE](https://cloud.google.com/kubernetes-engine), [AWS EKS](https://aws.amazon.com/eks) or [IBM Managed Kubernetes Service](https://www.ibm.com/uk-en/cloud/container-service).
+`Kubernetes` allows you to automate, scale and manage your containerised applications. It's a `production grade` system which you can run [in development](/design-container-ready-development), on-premises or in the cloud with [Azure AKS](https://azure.microsoft.com/en-gb/services/kubernetes-service), [Google GKE](https://cloud.google.com/kubernetes-engine), [AWS EKS](https://aws.amazon.com/eks) or [IBM Managed Kubernetes Service](https://www.ibm.com/uk-en/cloud/container-service).
 
 > Kubernetes is an open-source system that's been [developed and used at Google](https://queue.acm.org/detail.cfm?id=2898444).
 
 [Kubernetes objects](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/) describe your containerised application's `desired state`, such as number of instances, resource allocations and networking. These are defined in [YAML Ain't Markup Language (YAML)](https://yaml.org/) and are source controlled. This allows you to always maintain the desired state of your application stack and delegate to Kubernetes to ensure the actual state of your application meets the desired state as defined in YAML.
 
-Finally, any changes to your application are then made to these YAML declarations and pushed automatically to your Kubernetes host via [CICD pipelines](./start-early-with-cicd-and-automation).
+Finally, any changes to your application are then made to these YAML declarations and pushed automatically to your Kubernetes host via [CICD pipelines](/start-early-with-cicd-and-automation).
 
 ## What is Helm?
 
@@ -42,6 +42,6 @@ Simple applications could possibly get away with just deploying YAML declaration
 
 > You can store your Helm Charts in `Container Registries`, good example is [Azure ACR](https://azure.microsoft.com/en-us/services/container-registry/).
 
-These effectively become your software catalogues from which you pull Helm Charts down for deployment into Kubernetes via [CICD pipelines](./start-early-with-cicd-and-automation) at which point these become running, containerised, applications.
+These effectively become your software catalogues from which you pull Helm Charts down for deployment into Kubernetes via [CICD pipelines](/start-early-with-cicd-and-automation) at which point these become running, containerised, applications.
 
-### [Next >>](./start-thinking-containers)
+### [Next >>](/start-thinking-containers)
