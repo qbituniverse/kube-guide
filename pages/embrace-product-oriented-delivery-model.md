@@ -41,4 +41,4 @@ As opposed to `projects` which tend to be delivered in a [waterfall model](https
 > 5. `Daily Stand-up`: Ability to react to adverse events quickly with little impact to long-term expectations
 > 6. `Sprint Review`: Transparency and open communication at the stakeholder level
 
-### [<< Previous](/consider-platformops-for-delivering-software) | [Next >>](/the-journey-to-kubernetes-in-production)
+### [<< Previous](consider-platformops-for-delivering-software.md) | [Next >>](the-journey-to-kubernetes-in-production.md)
