@@ -10,7 +10,7 @@ permalink: ./invest-efforts-into-logging-and-monitoring/
 
 Back in the days when we used to run [Monolithic applications](https://en.wikipedia.org/wiki/Monolithic_application) more often than not `logs` would be written to `file system` on the host next to the monolith. More advanced implementations might have an ingestion system built to move these logs into a central logging repository where application support could access them easily. Similar pattern would apply to `monitoring` around the monolith with probes connected to a specific page or endpoint listening to these URLs and detecting any non-success responses back.
 
-In the age of modern [Mesh applications](/adopt-mesh-app-and-service-architecture) the practices described above are not feasible mainly due to the fact that software is no longer hosted on physical machines - so for starters no easy access to its file system. Often, modern software is hosted and running on `virtual, serverless, stateless instances` with no or little access to the file system - especially true with [distributed and containerised software](/start-thinking-containers).
+In the age of modern [Mesh applications](adopt-mesh-app-and-service-architecture.md) the practices described above are not feasible mainly due to the fact that software is no longer hosted on physical machines - so for starters no easy access to its file system. Often, modern software is hosted and running on `virtual, serverless, stateless instances` with no or little access to the file system - especially true with [distributed and containerised software](start-thinking-containers.md).
 
 ## Design your Centralised Logging Strategy
 
@@ -64,4 +64,4 @@ Here your task is to decide `how and what` you need to monitor. In the context o
 > 3. Traditional `ping` request-response mechanism
 >     - Simply call a URL and inspect response - it's actually a pretty good approach to iron out potential `networking issues`, depending where you ping it from of course
 
-### [<< Previous](/start-early-with-cicd-and-automation) | [Next >>](/cloud-first-strategy-is-the-theme-of-the-day)
+### [<< Previous](start-early-with-cicd-and-automation.md) | [Next >>](cloud-first-strategy-is-the-theme-of-the-day.md)

@@ -16,13 +16,13 @@ In the traditional, [project-oriented delivery model](https://en.wikipedia.org/w
 
 ## Start doing DevOps right
 
-Every journey starts with a small step in the right direction. [DevOps](https://en.wikipedia.org/wiki/DevOps) adoption is normally the first step many organisations will take when it comes to running [CICD and automation](/start-early-with-cicd-and-automation). `DevOps` is also the right thing to do regardless if your aspirations are just running seamless CICD pipelines or maybe your desire is to venture into `PlatformOps` as you mature your processes.
+Every journey starts with a small step in the right direction. [DevOps](https://en.wikipedia.org/wiki/DevOps) adoption is normally the first step many organisations will take when it comes to running [CICD and automation](start-early-with-cicd-and-automation.md). `DevOps` is also the right thing to do regardless if your aspirations are just running seamless CICD pipelines or maybe your desire is to venture into `PlatformOps` as you mature your processes.
 
-When it comes to [containerised apps](/start-thinking-containers) DevOps is the must have. It's very likely that you'll end up building and releasing code daily and the last thing you'd want is to manually oversee this process or have a human somewhere in the mix slowing it all down.
+When it comes to [containerised apps](start-thinking-containers.md) DevOps is the must have. It's very likely that you'll end up building and releasing code daily and the last thing you'd want is to manually oversee this process or have a human somewhere in the mix slowing it all down.
 
 > Look into CICD tools such as [Azure DevOps](https://azure.microsoft.com/en-gb/services/devops/), [Jenkins](https://www.jenkins.io/) or [Ansible](https://www.ansible.com/).
 
-If you've done `DevOps` right you have probably found yourself running multiple projects or [delivering products](/embrace-product-oriented-delivery-model) in this CICD automated way.
+If you've done `DevOps` right you have probably found yourself running multiple projects or [delivering products](embrace-product-oriented-delivery-model.md) in this CICD automated way.
 
 However, the more software you develop and deliver the more you'll start thinking in terms of `scale and agility`, right? 
 
@@ -32,7 +32,7 @@ In the `PlatformOps` model the `us` and the `them` I mentioned earlier are worki
 
 > Sooner or later you'll end up with what is called [Shadow IT](https://en.wikipedia.org/wiki/Shadow_IT).
 
-Whereby the development community accelerates with new tech, [often seen with cloud adoption](/cloud-first-strategy-is-the-theme-of-the-day), at the detriment to the rest of the organisation - mainly resulting in security breaches and unnecessary costs.
+Whereby the development community accelerates with new tech, [often seen with cloud adoption](cloud-first-strategy-is-the-theme-of-the-day.md), at the detriment to the rest of the organisation - mainly resulting in security breaches and unnecessary costs.
 
 Collaboration in the `PlatformOps` model will often start at developer and operations teams’ level. This is probably the earliest opportunity to shut the `shadow IT` activities and `bridge` automation process under one `PlatformOps umbrella`.
 
@@ -60,4 +60,4 @@ Let's now briefly summarise the `benefits` PlatformOps can bring to your organis
 > 5. `Product`
 >   - Ability to deliver features on time and at low cost
 
-### [<< Previous](/api-lifecycle-management-is-the-future) | [Next >>](/embrace-product-oriented-delivery-model)
+### [<< Previous](api-lifecycle-management-is-the-future.md) | [Next >>](embrace-product-oriented-delivery-model.md)

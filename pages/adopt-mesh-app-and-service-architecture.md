@@ -28,7 +28,7 @@ Let's start with the lowest layer in our MASA architecture and we’ll call it `
 
 > The Inner APIs are only accessible on your `internal` networking infrastructure and you have proper `authentication` and `authorisation` mechanisms in place to guard access to these APIs.
 
-A single Inner API in your estate could be responsible for making payments, another for submitting orders and so on... From software development point of view this approach is also called [Microservice](https://en.wikipedia.org/wiki/Microservices) or [Loose coupled](https://en.wikipedia.org/wiki/Loose_coupling) service. It makes [development and testing](/design-container-ready-development) of such components easy and it also allows to fully automate software [builds and releases](/start-early-with-cicd-and-automation).
+A single Inner API in your estate could be responsible for making payments, another for submitting orders and so on... From software development point of view this approach is also called [Microservice](https://en.wikipedia.org/wiki/Microservices) or [Loose coupled](https://en.wikipedia.org/wiki/Loose_coupling) service. It makes [development and testing](design-container-ready-development.md) of such components easy and it also allows to fully automate software [builds and releases](start-early-with-cicd-and-automation.md).
 
 However, on their own, these APIs are not very useful other than `doing one thing very well`... these APIs need orchestration and we'll be looking into that next.
 
@@ -40,17 +40,17 @@ Enter the world of API orchestration which we'll call `Outer APIs` in our MASA a
 
 An Outer API could be performing product sorting feature or submitting payments on your `App`. Whatever the requirement is, Outer APIs will implement it in the `API Mediation Layer`.
 
-> This also brings another concept for your consideration - [API Lifecycle Management](/api-lifecycle-management-is-the-future).
+> This also brings another concept for your consideration - [API Lifecycle Management](api-lifecycle-management-is-the-future.md).
 
-From software development perspective things get little more complicated as you'll now deal with potentially multiple Inner APIs required to be accessible for development of a single Outer API feature. Again, [thinking containers](/start-thinking-containers) and [container development](/design-container-ready-development) helps a lot here.
+From software development perspective things get little more complicated as you'll now deal with potentially multiple Inner APIs required to be accessible for development of a single Outer API feature. Again, [thinking containers](start-thinking-containers.md) and [container development](design-container-ready-development.md) helps a lot here.
 
-From the [CICD perspective](/start-early-with-cicd-and-automation) situation is also similar to Inner APIs, however...
+From the [CICD perspective](start-early-with-cicd-and-automation.md) situation is also similar to Inner APIs, however...
 
-> You might want to start thinking [PlatformOps](/consider-platformops-for-delivering-software) when it comes to running and supporting `Mesh Apps` hosted on `Kubernetes` as these solutions will `depend heavily` on [API Lifecycle Management and API Gateways](/api-lifecycle-management-is-the-future) components.
+> You might want to start thinking [PlatformOps](consider-platformops-for-delivering-software.md) when it comes to running and supporting `Mesh Apps` hosted on `Kubernetes` as these solutions will `depend heavily` on [API Lifecycle Management and API Gateways](api-lifecycle-management-is-the-future.md) components.
 
 #### Mesh Applications
 
-Finally, we got to the top of our MASA architecture which we'll just call `Mesh Applications` or `Apps` for short. The applications are [your products](/embrace-product-oriented-delivery-model), either internal (Intranet) or external (Internet) facing. Often the Apps will be in the form of [Responsive websites](https://en.wikipedia.org/wiki/Responsive_web_design) capable of running on many screen sizes and devices. You might also have Apps written for [IoT](https://en.wikipedia.org/wiki/Internet_of_things) devices such as [wearable technology](https://en.wikipedia.org/wiki/Wearable_technology).
+Finally, we got to the top of our MASA architecture which we'll just call `Mesh Applications` or `Apps` for short. The applications are [your products](embrace-product-oriented-delivery-model.md), either internal (Intranet) or external (Internet) facing. Often the Apps will be in the form of [Responsive websites](https://en.wikipedia.org/wiki/Responsive_web_design) capable of running on many screen sizes and devices. You might also have Apps written for [IoT](https://en.wikipedia.org/wiki/Internet_of_things) devices such as [wearable technology](https://en.wikipedia.org/wiki/Wearable_technology).
 
 > The Apps are in effect `dumb frontends` which need to be able to `execute calls over HTTP protocol` to consume Outer APIs. Outer APIs in effect provide the Apps with all the logic required for them to function. Or to put it in other words, Outer APIs are the `heart of your product`.
 
@@ -58,8 +58,8 @@ Therefore, you can see from the above, the App just needs to look pretty, and it
 
 Good example could be your hypothetical `Online Store Mesh Application` consisting of one App for user login, one App for products and shopping, one App for checkout process and one App for user dashboard. What’s great about this is that your user can start their shopping journey on tablet, then 2 hours later come back to your Mesh Application and finish off the purchase on Desktop PC or a smart watch. Quite neat, hey?
 
-From both development and infrastructure perspective the Apps are like the APIs. Apps are [developed](/design-container-ready-development) and [deployed](/start-early-with-cicd-and-automation) as a single component.
+From both development and infrastructure perspective the Apps are like the APIs. Apps are [developed](design-container-ready-development.md) and [deployed](start-early-with-cicd-and-automation.md) as a single component.
 
 > You need to consider `Networking, Routing and Authorisation` at this stage so that your `Apps`, and `Outer APIs` for that matter, are accessible to your users - very important for Internet and IoT facing implementations.
 
-### [<< Previous](/embed-least-privileged-approach) | [Next >>](/start-early-with-cicd-and-automation)
+### [<< Previous](embed-least-privileged-approach.md) | [Next >>](start-early-with-cicd-and-automation.md)
